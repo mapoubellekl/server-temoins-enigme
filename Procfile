@@ -1,6 +1,6 @@
 "scripts": {
-  "start": "node dist/server.js",
+  "start": "node build/server.js",
     "postinstall": "tsc",
-    "watch-node": "nodemon dist/server.js",
+    "watch-node": "nodemon build/server.js",
     "watch-ts": "tsc -w",
 }
