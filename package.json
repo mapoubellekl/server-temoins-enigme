@@ -1,0 +1,23 @@
+{
+  "name": "server-temoins-enigme",
+  "version": "1.0.0",
+  "description": "back end app-temoins-enigme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xirtam",
+  "license": "ISC",
+  "dependencies": {
+    "@okta/jwt-verifier": "0.0.14",
+    "@types/cors": "2.8.4",
+    "@types/express": "4.16.0",
+    "cors": "2.8.4",
+    "express": "4.16.4",
+    "express-bearer-token": "2.2.0",
+    "sqlite3": "5.0.2",
+    "tsc": "1.20150623.0",
+    "typeorm": "^0.2.31",
+    "typescript": "3.7.7"
+  }
+}
