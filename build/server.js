@@ -10,6 +10,6 @@ const app = express()
     .use(bodyParser.json())
     .use(bearerToken())
     .use(enigmeService_1.router);
-app.listen(4201, () => {
-    return console.log('My Node App listening on port 4201');
+app.listen(process.env.PORT, () => {
+    console.log(`My Node App listening on port ${process.env.PORT}`);
 });
