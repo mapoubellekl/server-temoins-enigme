@@ -4,7 +4,7 @@
   "description": "back end app-temoins-enigme",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "tsc",
     "postinstall": "npm run build",
     "start": "node dist/server.js",
     "start:dev": "PORT=5000 node dist/server.js",
