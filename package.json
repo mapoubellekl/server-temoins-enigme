@@ -4,12 +4,10 @@
   "description": "back end app-temoins-enigme",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json",
     "preinstall": "npm install typescript",
     "postinstall": "npm run build",
     "start": "node dist/server.js",
-    "start:dev": "PORT=5000 node dist/server.js",
-    "dev": "PORT=5000 nodemon --exec ts-node src/server.ts --watch src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "xirtam",
