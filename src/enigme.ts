@@ -14,22 +14,14 @@ export class Enigme {
   @Column()
   found: boolean;
 
-  // @Column('text')
-  // imgEnigme: string;
-
   @Column()
   responseEnigme: string;
 
-  // @Column('text')
-  // imgGeoCaching: string;
-
-  // @Column('text')
-  // imgHiddenObject: string;
+  @Column()
+  geocachText: string;
 
 }
 //https://developer.okta.com/blog/2018/10/30/basic-crud-angular-and-node
-
-//pas regardé https://malcoded.com/posts/angular-backend-express/
 
 
 let connection:Connection;

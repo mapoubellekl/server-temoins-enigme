@@ -10,5 +10,6 @@ export class EnigmeDto {
 
   imgGeoCaching: string;
   imgHiddenObject: string;
+  geocachText: string;
 
 }

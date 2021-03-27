@@ -105,6 +105,7 @@ function toFrontEnigme(enigme: Enigme){
         res.year = enigme.year;
         res.imgEnigme = readFile('enigme_'+enigme.id);
         res.authorized = true;
+        res.geocachText = enigme.geocachText;
         if(enigme.found){
             res.imgGeoCaching  = readFile('geoCaching_'+enigme.id);
             res.imgHiddenObject  = readFile('hidden_'+enigme.id);
@@ -162,12 +163,10 @@ async function initEnigme(id:number){
   var enigme = DICT_ENIGMES[""+id];
   console.log("enigme qui va etre sauvegardée = " +enigme);
   const toSave = new Enigme();
-  // toSave.imgEnigme = dataEnigme;
-  // toSave.imgGeoCaching = dataGeoCaching;
-  // toSave.imgHiddenObject = dataHiddenObject;
   toSave.year = enigme["year"];
   toSave.month = enigme["month"];
-  toSave.responseEnigme= enigme["response"];
+  toSave.responseEnigme = enigme["response"];
+  toSave.geocachText = enigme["geocachText"];
   toSave.found=false;
   toSave.id = id;
 

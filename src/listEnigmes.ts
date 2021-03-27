@@ -1,7 +1,7 @@
 
 export const DICT_ENIGMES={
-    "1" : {"month" : 'Mars', "year":2021, "response":"UNION"},
-    "2" : {"month" : 'Avril', "year":2021, "response":"UNION"}
+    "1" : {"month" : 'Mars', "year":2021, "response":"ARTHOUR", "geocachText":"Je me situe proche du ruisseau, à côté de la barrière de délimitation de la demeure du pont"},
+    "2" : {"month" : 'Avril', "year":2021, "response":"ARTHOUR", "geocachText":"Je me situe proche du ruisseau, à côté de la barrière de délimitation de la demeure du pont"}
     // ,
     // "2" : {"month" : 'Mai', "year":2021},
     // "3" : {"month" : 'Juin', "year":2021},
