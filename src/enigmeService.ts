@@ -5,7 +5,7 @@ import { DICT_ENIGMES } from './listEnigmes';
 
 var fs = require('fs');
 const nbEntreesMax = 12;
-let firstDate = new Date(2021, 2, 1);//new Date(2021, 3, 1);
+let firstDate = new Date(2021, 3, 1);
 
 export const router: Router = Router();
 
