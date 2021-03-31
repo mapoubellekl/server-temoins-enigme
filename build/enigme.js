@@ -41,12 +41,15 @@ __decorate([
     typeorm_1.Column(),
     __metadata("design:type", String)
 ], Enigme.prototype, "responseEnigme", void 0);
+__decorate([
+    typeorm_1.Column(),
+    __metadata("design:type", String)
+], Enigme.prototype, "geocachText", void 0);
 Enigme = __decorate([
     typeorm_1.Entity()
 ], Enigme);
 exports.Enigme = Enigme;
 //https://developer.okta.com/blog/2018/10/30/basic-crud-angular-and-node
-//pas regardé https://malcoded.com/posts/angular-backend-express/
 let connection;
 function getEnigmeRepository() {
     return __awaiter(this, void 0, void 0, function* () {

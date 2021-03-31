@@ -15,7 +15,7 @@ const enigmeDto_1 = require("./enigmeDto");
 const listEnigmes_1 = require("./listEnigmes");
 var fs = require('fs');
 const nbEntreesMax = 12;
-let firstDate = new Date(2021, 2, 1); //new Date(2021, 3, 1);
+let firstDate = new Date(2021, 3, 1);
 exports.router = express_1.Router();
 exports.router.get('/enigme/:id', function (req, res, next) {
     return __awaiter(this, void 0, void 0, function* () {
@@ -108,6 +108,7 @@ function toFrontEnigme(enigme) {
         res.year = enigme.year;
         res.imgEnigme = readFile('enigme_' + enigme.id);
         res.authorized = true;
+        res.geocachText = enigme.geocachText;
         if (enigme.found) {
             res.imgGeoCaching = readFile('geoCaching_' + enigme.id);
             res.imgHiddenObject = readFile('hidden_' + enigme.id);
@@ -160,12 +161,10 @@ function initEnigme(id) {
         var enigme = listEnigmes_1.DICT_ENIGMES["" + id];
         console.log("enigme qui va etre sauvegardée = " + enigme);
         const toSave = new enigme_1.Enigme();
-        // toSave.imgEnigme = dataEnigme;
-        // toSave.imgGeoCaching = dataGeoCaching;
-        // toSave.imgHiddenObject = dataHiddenObject;
         toSave.year = enigme["year"];
         toSave.month = enigme["month"];
         toSave.responseEnigme = enigme["response"];
+        toSave.geocachText = enigme["geocachText"];
         toSave.found = false;
         toSave.id = id;
         const repository = yield enigme_1.getEnigmeRepository();
