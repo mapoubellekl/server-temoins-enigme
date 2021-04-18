@@ -105,8 +105,8 @@ function toFrontEnigme(enigme: Enigme){
         res.year = enigme.year;
         res.imgEnigme = readFile('enigme_'+enigme.id);
         res.authorized = true;
-        res.geocachText = enigme.geocachText;
         if(enigme.found){
+            res.geocachText = enigme.geocachText;
             res.imgGeoCaching  = readFile('geoCaching_'+enigme.id);
             res.imgHiddenObject  = readFile('hidden_'+enigme.id);
         }
